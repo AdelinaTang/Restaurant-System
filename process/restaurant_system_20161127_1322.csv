@@ -7,9 +7,7 @@ Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current St
 3171383,Manage Membership ,membership,,,,epic,,,"Nov 26, 2016",,,,"As a  restaurant staff, I can manage membership registration so that I can help the restaurant customer to collect loyalty points",https://www.pivotaltracker.com/epic/show/3171383,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 134989309,Login to the system,membership,1,"Nov 14, 2016","Nov 27, 2016",feature,3,finished,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can login to the website so that I can trust the website",https://www.pivotaltracker.com/story/show/134989309,,,Wilson,"Commit by TaintedOnes
 https://github.com/AdelinaTang/Restaurant-System/commit/c1426bba4be737e75219f9544102298f47cfa01d
-
 [Completed #134989309]
-
 1) Developers: Chin Wei Song
 2) Time: 03 : 00
 3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
