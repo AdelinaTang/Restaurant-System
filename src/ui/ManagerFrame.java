@@ -155,7 +155,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class SearchFoodListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new SearchFoodFrame();
         }
     }
 
