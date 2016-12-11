@@ -3,81 +3,98 @@
 package ui;
 
 import javax.swing.*;
-import javax.swing.table.*;
 import java.awt.event.*;
 import java.awt.*;
-import java.util.ArrayList;
 import control.*;
 import domain.*;
+import java.util.ArrayList;
 
-public class FoodClick extends javax.swing.JFrame {
+public class UpdateMenusFrame extends javax.swing.JFrame {
 
     private MaintainMenusControl maintainMenusControl = new MaintainMenusControl();
-    private ArrayList<Menus> readMenu = maintainMenusControl.retrieveMenusRecordControl();
-    
+    private ArrayList<Menus> menus = null;
+    private DefaultComboBoxModel model = new DefaultComboBoxModel();
 
-    public FoodClick() {
-    }
-    
-    public FoodClick(Menus menu){
+    public UpdateMenusFrame() {
+
         initComponents();
-        setTitle("Menu");
+        setTitle("Update Menu");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
-        
-        
-        jtfFoodID.setText(menu.getFoodID());
-        jtfFoodName.setText(menu.getFoodName());
-        jtfCategory.setText(menu.getCategory());
-        jtaDescription.setText(menu.getDescription());
-        jtfPrice.setText(String.format("RM %.2f",menu.getPricePerUnit()));
-        jtfStatus.setText(menu.getStatus());
-        jtfFoodID.setEditable(false);
-        jtfFoodName.setEditable(false);
-        jtfCategory.setEditable(false);
-        jtaDescription.setEditable(false);
-        jtfPrice.setEditable(false);
-        jtfStatus.setEditable(false);
-        
-        
-        jbtOk.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                dispose();
-            }
-        });
-    }
-    
-    public FoodClick(int i) {
-        initComponents();
-        setTitle("Menu");
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setVisible(true);
-        
-        
-        jtfFoodID.setText(readMenu.get(i).getFoodID());
-        jtfFoodName.setText(readMenu.get(i).getFoodName());
-        jtfCategory.setText(readMenu.get(i).getCategory());
-        jtaDescription.setText(readMenu.get(i).getDescription());
-        jtfPrice.setText(String.format("RM %.2f",readMenu.get(i).getPricePerUnit()));
-        jtfStatus.setText(readMenu.get(i).getStatus());
-        jtfFoodID.setEditable(false);
-        jtfFoodName.setEditable(false);
-        jtfCategory.setEditable(false);
-        jtaDescription.setEditable(false);
-        jtfPrice.setEditable(false);
-        jtfStatus.setEditable(false);
-        
-        
-        jbtOk.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                dispose();
-            }
-        });
-    
-        
+        pack();
 
+        menus = maintainMenusControl.retrieveMenusRecordControl();
+        for (int i = 0; i < menus.size(); i++) {
+            model.addElement(menus.get(i).getFoodID());
+        }
+
+        jcbMenuID.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String menuID = (String) jcbMenuID.getSelectedItem();
+                Menus menu = maintainMenusControl.retrieveMenusRecordControl(menuID);
+                double pricePerUnit = menu.getPricePerUnit();
+                jtfFoodName.setText(menu.getFoodName());
+                jcbCategory.setSelectedItem(menu.getCategory());
+                jtaDescription.setText(menu.getDescription());
+                jtfPrice.setText(String.format("%.2f", pricePerUnit));
+                jcbStatus.setSelectedItem(menu.getStatus());
+
+            }
+        });
+
+        jbtOk.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String category = (String) jcbCategory.getSelectedItem();
+                String foodID = (String) jcbMenuID.getSelectedItem();
+                String status = (String) jcbStatus.getSelectedItem();
+                String price = jtfPrice.getText();
+                String foodName = jtfFoodName.getText();
+                String description = jtaDescription.getText();
+                boolean valid = validateInput(foodName, description, price);
+                if (valid) {
+                    int option = JOptionPane.showConfirmDialog(null, "Confirm to update?", "Update Menu", JOptionPane.YES_NO_OPTION);
+                    if (option == JOptionPane.YES_OPTION) {
+                        double pricePerUnit = Double.parseDouble(price);
+                        Menus menu = new Menus(foodID, jtfFoodName.getText(), category, jtaDescription.getText(), pricePerUnit,
+                                status);
+                        maintainMenusControl.updateMenusRecordControl(menu);
+                        JOptionPane.showMessageDialog(null, "Record successfully updated");
+                        Reset();
+                    }
+
+                }
+            }
+        });
+
+        jbtCancel.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
+
+    }
+
+    public boolean validateInput(String foodName, String description, String price) {
+        if (foodName.equals("") || description.equals("") || price.equals("")) {
+            JOptionPane.showMessageDialog(null, "Fields cannot be left blank.");
+            jtfFoodName.requestFocusInWindow();
+            return false;
+        }
+        if (!price.matches("\\d+([.,]\\d{1,2})?")) {
+            JOptionPane.showMessageDialog(null, "Invalid price");
+            jtfPrice.setText("");
+            jtfPrice.requestFocusInWindow();
+            return false;
+        }
+        return true;
+    }
+
+    public void Reset() {
+        jtfFoodName.setText("");
+        jtaDescription.setText("");
+        jtfPrice.setText("");
     }
 
     @SuppressWarnings("unchecked")
@@ -90,19 +107,20 @@ public class FoodClick extends javax.swing.JFrame {
         jlbCategory = new javax.swing.JLabel();
         jlbDescription = new javax.swing.JLabel();
         jlbPrice = new javax.swing.JLabel();
-        jtfFoodID = new javax.swing.JTextField();
         jtfFoodName = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtaDescription = new javax.swing.JTextArea();
         jbtOk = new javax.swing.JButton();
+        jbtCancel = new javax.swing.JButton();
         jtfPrice = new javax.swing.JTextField();
-        jtfCategory = new javax.swing.JTextField();
+        jcbMenuID = new javax.swing.JComboBox(model);
+        jcbCategory = new javax.swing.JComboBox();
         jlbStatus = new javax.swing.JLabel();
-        jtfStatus = new javax.swing.JTextField();
+        jcbStatus = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Menu", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Update Menu", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
 
         jlbFoodID.setText("Food ID");
 
@@ -112,7 +130,7 @@ public class FoodClick extends javax.swing.JFrame {
 
         jlbDescription.setText("Description");
 
-        jlbPrice.setText("Price");
+        jlbPrice.setText(" Price (RM)");
 
         jtaDescription.setColumns(20);
         jtaDescription.setLineWrap(true);
@@ -122,7 +140,13 @@ public class FoodClick extends javax.swing.JFrame {
 
         jbtOk.setText("Ok");
 
+        jbtCancel.setText("Cancel");
+
+        jcbCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Sushi", "Dessert", "Drinks" }));
+
         jlbStatus.setText("Status");
+
+        jcbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Active", "Terminated" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -139,25 +163,25 @@ public class FoodClick extends javax.swing.JFrame {
                     .addComponent(jlbFoodID, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jtfFoodID)
                     .addComponent(jtfFoodName)
                     .addComponent(jtfPrice, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
                     .addComponent(jScrollPane1)
-                    .addComponent(jtfCategory)
-                    .addComponent(jtfStatus, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE))
+                    .addComponent(jcbMenuID, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jcbCategory, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jbtOk)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtCancel))
+                    .addComponent(jcbStatus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(28, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jbtOk)
-                .addGap(166, 166, 166))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlbFoodID, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfFoodID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcbMenuID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbFoodName, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -165,7 +189,7 @@ public class FoodClick extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfCategory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcbCategory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlbDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -174,13 +198,15 @@ public class FoodClick extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlbPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jtfPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(6, 6, 6)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlbStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcbStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlbStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbtOk)
-                .addGap(70, 70, 70))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtCancel)
+                    .addComponent(jbtOk))
+                .addGap(50, 50, 50))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -196,7 +222,7 @@ public class FoodClick extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 366, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -217,19 +243,19 @@ public class FoodClick extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FoodClick.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateMenusFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FoodClick.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateMenusFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FoodClick.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateMenusFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FoodClick.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UpdateMenusFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FoodClick().setVisible(true);
+                new UpdateMenusFrame().setVisible(true);
             }
         });
     }
@@ -237,7 +263,11 @@ public class FoodClick extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton jbtCancel;
     private javax.swing.JButton jbtOk;
+    private javax.swing.JComboBox jcbCategory;
+    private javax.swing.JComboBox jcbMenuID;
+    private javax.swing.JComboBox jcbStatus;
     private javax.swing.JLabel jlbCategory;
     private javax.swing.JLabel jlbDescription;
     private javax.swing.JLabel jlbFoodID;
@@ -245,10 +275,7 @@ public class FoodClick extends javax.swing.JFrame {
     private javax.swing.JLabel jlbPrice;
     private javax.swing.JLabel jlbStatus;
     private javax.swing.JTextArea jtaDescription;
-    private javax.swing.JTextField jtfCategory;
-    private javax.swing.JTextField jtfFoodID;
     private javax.swing.JTextField jtfFoodName;
     private javax.swing.JTextField jtfPrice;
-    private javax.swing.JTextField jtfStatus;
     // End of variables declaration//GEN-END:variables
 }
