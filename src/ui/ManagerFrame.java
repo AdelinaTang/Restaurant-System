@@ -172,7 +172,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class ReadCustomerListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new ReadCustomerFrame();
         }
     }
 
@@ -186,7 +186,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class DeleteCustomerListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new DeleteCustomerFrame();
         }
     }
 
