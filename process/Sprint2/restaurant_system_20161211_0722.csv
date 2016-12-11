@@ -1,0 +1,311 @@
+Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Description,URL,Other ID,Integration,Owned By,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status
+3171431,Manage Food,food,,,,epic,,,"Nov 26, 2016",,,,"As a restaurant manager, I can manage food record so that I can offer more variety of food to the customers",https://www.pivotaltracker.com/epic/show/3171431,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3171409,Manage Seat,seat,,,,epic,,,"Nov 26, 2016",,,,"As a restaurant manager, I can manage seat record so that I can make sure that there is enough chairs and tables in the restaurant",https://www.pivotaltracker.com/epic/show/3171409,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3171407,Manage Staff,staff,,,,epic,,,"Nov 26, 2016",,,,"As a restaurant manager, I can manage the staff record so that I can have up-to-date staff details",https://www.pivotaltracker.com/epic/show/3171407,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3171387,Manage Payment,payment,,,,epic,,,"Nov 26, 2016",,,,"As a restaurant staff, I can manage customer's payment so that I can make sure that the customer's bill is paid",https://www.pivotaltracker.com/epic/show/3171387,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3171385,Manage Order,order,,,,epic,,,"Nov 26, 2016",,,,"As a restaurant staff, I can manage customer orders so that I can make sure that the customer orders are correct",https://www.pivotaltracker.com/epic/show/3171385,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3171383,Manage Membership ,membership,,,,epic,,,"Nov 26, 2016",,,,"As a  restaurant staff, I can manage membership registration so that I can help the restaurant customer to collect loyalty points",https://www.pivotaltracker.com/epic/show/3171383,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+134989309,Login to the system,membership,1,"Nov 14, 2016","Nov 27, 2016",feature,3,accepted,"Nov 26, 2016","Nov 27, 2016",,AdelinaTang,"As a restaurant staff, I can login to the website so that I can trust the website",https://www.pivotaltracker.com/story/show/134989309,,,Wilson,"Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/c1426bba4be737e75219f9544102298f47cfa01d
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/fbfb86c8878982118b5344128a7ccf1aefca1d66
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/b92bb80d7fbee3550c747b4232ae11f9a4c96b1e
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/434d2c9317dec1f558548e99076c456c9a2b89b7
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 02 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/e486bf3d6766dc33d68023b490e52dfc30d98ff5
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/ec45062404ca50935f974532dd12e4c382838296
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 02 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/ecc489790a1eac8b457e208f5bfae53fc44b632b
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/a09bef73b7ac3b71c43038371dade078045e8699
+
+[Completed #134989309]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989309, Login to the system (AdelinaTang - Nov 27, 2016)",,,,,,Plan the overall database that involved in the Restaurant System,not completed,Connect to database in Netbean,not completed,"Create tables for 'Customer', 'Staff', 'Payment', 'Order', 'Food', 'Seat' and 'Orderlist'",not completed,Populate the tables created with some sample records,not completed,Design the home layout for Restaurant System,not completed,Write code for the home layout in Netbean,not completed,Test the code for home layout to see whether it display the design elements neatly,not completed,Write JFrame code for login form layout which consists of username and password text fields and a login button,not completed,Test the form layout code to see whether the text fields and buttons are displayed neatly,not completed,Write code for retrieving the staff record and check whether the username and password input match the retrieved staff record,not completed,Test the login function code,not completed,"Insert a JOptionPane message dialog with a message ""Successfully Login"" when the username and password input match with the retrieved staff record",not completed,"Insert a JOptionPane message dialog with an error message ""No such record exists. Try again""
+",not completed
+134989491,Add new order,order,1,"Nov 14, 2016","Nov 27, 2016",feature,1,accepted,"Nov 26, 2016","Nov 27, 2016",,AdelinaTang,"As a restaurant staff, I can add new customer order so that I can fulfill customer's order request",https://www.pivotaltracker.com/story/show/134989491,,,Wilson,"Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/e5b74d04ebc69a54ff89bc2d56e30e0587875209
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Add new order (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/652735c23370ce8a9ce362f7627fb63fb05e58f4
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Login to the system (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/bb0566fdb81a1f5d73573906b6fa1e3ede4148f5
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Add new order (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/b0450518fabd8c1ca67ed82016b4d7e3c3d8b2cc
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Add new order (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/867cef2258b4a7343695fbfe849f415bea48ef51
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Add new order (AdelinaTang - Nov 27, 2016)","Commit by TaintedOnes
+https://github.com/AdelinaTang/Restaurant-System/commit/3088882a69bc2f0532cf3f00bb8575d15a763da1
+
+[Completed #134989491]
+
+1) Developers: Chin Wei Song
+2) Time: 03 : 00
+3) Use case: #134989491, Add new order (AdelinaTang - Nov 27, 2016)",,,,,,,,"Plan the form layout that has text fields which are order id and date ordered, a drop down list which is seat number and a clickable JTable layout that displays the food item",not completed,Write code for the order form,not completed,"Test the code for order form to see whether it displays the text fields, drop down list and JTable neatly",not completed,Connect to the database,not completed,Write code to retrieve the records from 'Seat' table to display the available seats in the drop down list,not completed,Write code to retrieve the records from 'Food' table to display the food list in the clickable JTable,not completed,Test the code for the food list and seat number to see whether it can display successfully,not completed,Write code for generating the order id automatically,not completed,Test the code for order id to see whether it generates correctly,not completed,Write code for adding the new order record into the database,not completed,Test the code for create new order function,not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to add?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Order is successfully added"" when the order item is successfully inserted into the database
+",not completed
+134989499,Update order,order,1,"Nov 14, 2016","Nov 27, 2016",feature,1,accepted,"Nov 26, 2016","Nov 27, 2016",,AdelinaTang,"As a restaurant staff, I can update customer's order so that I can have the correct order details",https://www.pivotaltracker.com/story/show/134989499,,,Bryan Wong,"Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/2e580b940e47d5531191d447587ece255a3914bf
+
+[Completed #134989499]
+
+1_Developers: [Bryan_Wong_Chern_Kwang]
+2_Time: [9:00AM - 2:00PM]
+3_Use_case: [#134989499], [Update order] (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/0d95bee7730aaeedbf6a768832b7acb2e61f6d70
+
+[Completed #134989499]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989499, Update Order (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/35f77a71a3f4687177ff14586f5760669eb349a1
+
+[Completed #134989499]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989499, Update Order (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/b2600a39bc64d86a96a7df9d81f354844ac0fa6f
+
+[Completed #134989499]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989499, Update Order (AdelinaTang - Nov 27, 2016)",,,,,,,,,,"Plan the form layout for update order that consists of order id in a drop down list, text fields for seat number and date, a JTable layout for listing the food item ordered, and another JTable for listing the food item in the menu",not completed,Write code for the update form layout,not completed,Test the code for update form layout to see whether it is displaying the design elements neatly,not completed,Connect to database,not completed,Write code to retrieve order id from 'Order' table to bind it in the drop down list,not completed,Test the code to see whether it displays the order id in the drop down list successfully,not completed,Write code to update the order item details in the 'Orderlist' table,not completed,Test the code update code to see whether it can update the details successfully,not completed,"Insert a JOptionPane message dialog with a confirm  message ""Confirm to update?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Order is successfully updated"" when the order item is successfully inserted into the database",not completed
+134989683,Generate receipt,payment,1,"Nov 14, 2016","Nov 27, 2016",feature,2,accepted,"Nov 26, 2016","Nov 27, 2016",,AdelinaTang,"As a restaurant staff, I can generate receipt to customer so that I can prove that the bill has been paid",https://www.pivotaltracker.com/story/show/134989683,,,yxx xuan,"Commit by yixuanYX
+https://github.com/AdelinaTang/Restaurant-System/commit/30017c0405c385e9afedbf8b506abfd1d34a40de
+
+[Completed #134989683]
+
+1_Developers: [Chen Yi Xuan]
+2_Time: [04:00]
+3_Use_case: [#134989683], [Generate receipt] (AdelinaTang - Nov 27, 2016)","Commit by yixuanYX
+https://github.com/AdelinaTang/Restaurant-System/commit/336b40adb75a351e73446b6bd8a1562de4fe55e5
+
+[Completed #134989683]
+
+1) Developers: Chen Yi Xuan
+2) Time: 03 : 00
+3) Use case: #134989683, Generate receipt (AdelinaTang - Nov 27, 2016)","Commit by yixuanYX
+https://github.com/AdelinaTang/Restaurant-System/commit/6f58e91046ba1484055f34e4a17e791ea8cf7287
+
+[Completed #134989683]
+
+1) Developers: Chen Yi Xuan
+2) Time: 03 : 00
+3) Use case: #134989683, Generate receipt (AdelinaTang - Nov 27, 2016)","Commit by yixuanYX
+https://github.com/AdelinaTang/Restaurant-System/commit/0b3c40272081394e1e1cc8507c4804d3387c0385
+
+[Completed #134989683]
+
+1) Developers: Chen Yi Xuan
+2) Time: 03 : 00
+3) Use case: #134989683, Generate receipt (AdelinaTang - Nov 27, 2016)",,,,,,,,,,Plan the receipt layout for cash receipt and credit card receipt,not completed,Import file writer and buffered writer for generating receipt to the text file,not completed,"Write code for the cash receipt layout that consists of restaurant name, restaurant address, staff name, transaction id, order list, subtotal, GST and grandtotal",not completed,"Write code for the credit card receipt layout that consists of restaurant name, restaurant address, credit card number, card type, and grandtotal ",not completed,Test the layout code for cash and credit card to see whether the text are written and indented neatly,not completed,Connect to database,not completed,Write code to retrieve the transaction record from the 'Payment' table for a particular order,not completed,Write code for generating the receipt for cash and credit card into the text file,not completed,Test the code for generating the cash and credit card receipt to see if it can work successfully,not completed
+134989641,Check out bill,payment,1,"Nov 14, 2016","Nov 27, 2016",feature,2,accepted,"Nov 26, 2016","Nov 27, 2016",,AdelinaTang,"As a restaurant staff, I can check out customer's bill so that I can receive payment from customer",https://www.pivotaltracker.com/story/show/134989641,,,Bryan Wong,"Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/f247203f5430ec52692a360163f1368faa59564f
+
+[Completed #134989641]
+
+1_Developers: [Bryan_Wong_Chern_Kwang]
+2_Time: [12:00PM - 3:00PM]
+3_Use_case: [#134989641], [Check out bill] (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/f49bc5b84922b37c7e5d1c89fed515968eac9b53
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/5abcc8a25c9a09dbc22a68c64dfc349cd9effe16
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/8320c80e8c1542579369583187871ee93d8ca308
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/e877fbcad19a46e16a200a5e7440f581302621a6
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/bf83b5b1a17a7f5865e3f87a59fff74bbec07802
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/d0c3a7b2d876546d323de7dc154d52cadb9581b6
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/79b6ca9c18c49555054d0852646ae1ec547c684e
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/0ebe412a9ce928ea1efb92fd13732ef577eb3541
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/cc254e7d42b7d9b101db41088dca66f611f798d3
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/327bc93d4ce049bcf9634c5ffcf7f46d0d2892ea
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/860156b3acc37d31fc81de3d8fd525ad8d814eba
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Commit by AhWongFat
+https://github.com/AdelinaTang/Restaurant-System/commit/49eddbcbe37d2530abe0b0d43f03b0ab54d3a5c2
+
+[Completed #134989641]
+
+1) Developers: Bryan Wong Chern Kwang
+2) Time: 03 : 00
+3) Use case: #134989641, Check out bill (AdelinaTang - Nov 27, 2016)","Plan the check out form layout that consists of drop down list displaying the seat number, a search button, a JTable layout for showing the food ordered, a text field for total amount, a question ""Are you a member?"" together with two buttons labelled with ""Yes"" and ""No""",not completed,Write code for the check out form layout,not completed,Test the check out form layout to see whether it is displaying the design elements neatly,not completed,Connect to database,not completed,"Write code to retrieve the seat list with status ""Unavailable"" in the 'Seat' table and bind it to the drop down list",not completed,Test the code for seat list to ensure that it is displaying the seat numbers successfully,not completed,Write code for calculating the total amount for the customer's order ,not completed,Test the calculate amount code to see whether it is displaying the correct amount,not completed,Write code for calculating the member's payment that allows the member to use his or her loyalty point balance,not completed,Test the code for member's payment to see whether it can work successfully,not completed,Write code for calculating the non member's payment,not completed,Test the code for non member's payment to see whether it can work successfully,not completed,Write payment method code for both cash and credit card which is applicable to both members and non members,not completed,Test the code for payment method to see whether it can work successfully,not completed,Write code to add the transaction record into the 'Payment' table,not completed,Check the database 'Payment' table to see whether the record is added successfully,not completed
+134989633,View order,order,2,"Nov 28, 2016","Dec 11, 2016",feature,1,rejected,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can view customer's order so that I can check whether the food ordered is taken correctly",https://www.pivotaltracker.com/story/show/134989633,,,GoldFish Yen,"Commit by goldfishyen
+https://github.com/AdelinaTang/Restaurant-System/commit/7feb0aef57fe507d85605cea4eafbee0d4f3d289
+
+Add files via upload
+
+[Completed, #134989633]
+1_Developers: [Goldfishyen]
+2_Time: [Ideal_time_18:37]
+3_Use_case: [134989633], [View order] (AdelinaTang - Nov 27, 2016)","Commit by goldfishyen
+https://github.com/AdelinaTang/Restaurant-System/commit/09c551c3fc1118b205e2ebf6073492fc31618307
+
+[Completed, #134989633]
+
+1_Developers: [Goldfishyen]
+2_Time: [03:00]
+3_Use_case: [134989633], [View order] (AdelinaTang - Nov 27, 2016)","Commit by goldfishyen
+https://github.com/AdelinaTang/Restaurant-System/commit/2b700d3ed73c0420eff325e52a8e22b4964e98c2
+
+[Completed #134989633]
+
+1) Developers: Chen Yi Xuan
+2) Time: 03 : 00
+3) Use case: #134989633, View order (AdelinaTang - Nov 27, 2016)","Commit by goldfishyen
+https://github.com/AdelinaTang/Restaurant-System/commit/96a326bc778d72bf02cf334dd145968f1fc2ef14
+
+[Completed #134989633]
+
+1) Developers: Chan Bee Yen
+2) Time: 03 : 00
+3) Use case: #134989633, View order (AdelinaTang - Nov 27, 2016)","Commit by goldfishyen
+https://github.com/AdelinaTang/Restaurant-System/commit/e75aa80570055b17108a18bd12f333f641f31080
+
+[Completed #134989633]
+
+1) Developers: Chan Bee Yen
+2) Time: 03 : 00
+3) Use case: #134989633, View order (AdelinaTang - Nov 27, 2016)","Need to scroll through the results to find a particular item. Would prefer a search function. (AdelinaTang - Nov 27, 2016)",,,,,,,,"Plan the form layout for viewing the overall customer order in a JTable layout that displays the order id, seat number, food id, quantity, and date ordered",not completed,Write code for the layout form,not completed,Test the code to see whether the design elements are displayed neatly,not completed,Connect to database,not completed,Write code to retrieve all the order records from the 'Order' table and bind it to the JTable,not completed,Test the code to see whether the records are displayed successfully,not completed
+134989343,Add new member,membership,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can add new membership record so that I can fulfill customer's request to become a member",https://www.pivotaltracker.com/story/show/134989343,,,,,,,,,,,,,,,,,"Plan the add member layout form that consists of  text fields which are customer id, ic number, first name, last name, contact no, email, address, date joined, expiry date, and loyalty point balance",not completed,Write the code for the add member layout form,not completed,Test the layout code to see whether the design elements are idented neatly,not completed,Connect to database,not completed,"Write code to add the details of the member into the ""Member"" table",not completed,Test the code for add member function,not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to add?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Member is successfully added"" when the member details is successfully inserted into the database",not completed
+134989347,Update member,membership,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can update membership record so that I can have the latest customer's details",https://www.pivotaltracker.com/story/show/134989347,,,,,,,,,,,,,,,,,"Plan the update member form that consists of a drop down list of customer id, text fields of ic number, first name, last name, contact no, email, address, date joined, expiry date, loyalty point balance and old customer id",not completed,Write the code for update member form,not completed,Test the code to see whether the design elements are displaying neatly,not completed,Connect to database,not completed,"Write code to retrieve the customer id from ""Member"" table and bind it to the drop down list",not completed,Test the code to see whether it is successfully binded to the drop down list,not completed,"Write code to update the member details in the ""Member"" table",not completed,Test the code  for update member function,not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to add?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Member is successfully updated"" when the member details are successfully updated into the database",not completed
+134989449,Remove member,membership,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can remove membership record so that I deactivate the member when he or she no longer wants to become a member",https://www.pivotaltracker.com/story/show/134989449,,,,,,,,,,,,,,,,,"Plan the remove member form that consists of a drop down list of customer id and text fields of ic number, first name, last name, contact number, email, address, date joined, expiry date, loyalty point balance, and old customer id",not completed,Write the code for the layout form,not completed,Test the layout code form to see whether it is displaying neatly,not completed,Connect to database,not completed,"Write code to retrieve customer id from ""Customer"" table to bind it in the drop down list",not completed,Test the code to see whether it displays the customer id in the drop down list successfully,not completed,"Write code to update the customer's status from ""Active"" to ""Inactive"" in the ""Member"" table",not completed,Test the code to see whether it can update the record successfully,not completed,"Insert a JOptionPane message dialog with a confirm  message ""Confirm to delete?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Member is successfully deleted"" when the member record is successfully updated into the database",not completed
+134989459,View member,membership,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can view the membership record so that I can know the member details such as their loyalty point balance",https://www.pivotaltracker.com/story/show/134989459,,,,,,,,,,,,,,,,,"Plan the view member form that consists of customer id, ic number, firstname, lastname, contact number, email, address, date joined, expiry date, loyalty point balance, status and old id which are listed in a JTable form",not completed,Write the code for the JTable layout,not completed,Test the code to see whether it is displaying the fields neatly,not completed,Connect to database,not completed,"Write code to retrieve the overall customer details from the ""Member"" table and bind it to the JTable form",not completed,Test the code to see whether it can retrieve the correct details from the database,not completed
+134990677,Add new food,food,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can add new food record so that I can make the new food available in the menu",https://www.pivotaltracker.com/story/show/134990677,,,,,,,,,,,,,,,,,"Plan the add food form that consists of text fields of food id, food name, description, price and a drop down list of food category",not completed,Write the code for the layout form ,not completed,Test the code to see whether it is displaying the fields neatly,not completed,Connect to database,not completed,Write code for generating the food id automatically and bind it to the food id text field,not completed,Test the code to see whether the auto-generated id is displayed correctly,not completed,"Write code to add new food details to the ""Food"" database",not completed,Test the code for the add food function,not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to add ?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Food is successfully added"" when the food item is successfully inserted into the database",not completed
+134990763,Update food,food,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can update food record so that the food details remained correct and up-to-date",https://www.pivotaltracker.com/story/show/134990763,,,,,,,,,,,,,,,,,"Plan the update food form that consists of drop down list of food id, food category, food status, text fields of food name, description and price",not completed,Write the code for layout form ,not completed,Test the code to see whether it is displaying neatly,not completed,Connect to database,not completed,"Write code to retrieve all the food id from the ""Food"" table and bind the details to the corresponding fields",not completed,Test the code for the retrieve function to see whether it is displaying the correct details,not completed,"Write code to update the food details in the ""Food"" database",not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to update?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Food is successfully updated"" when the food item is successfully updated into the database
+",not completed
+134991209,View food,food,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can view food record so that I can know about the food details",https://www.pivotaltracker.com/story/show/134991209,,,,,,,,,,,,,,,,,"Plan the layout form for view menu that consists of a JTable form which lists out the food id, food name, food category, description, price and status",not completed,Test the layout code to see whether it is displaying neatly,not completed,Connect to database,not completed,"Write code to retrieve the overall food list from the ""Food"" table and bind it to the JTable form",not completed,Test the code to see whether it is displaying the correct details,not completed
+134989815,Add new staff,staff,2,"Nov 28, 2016","Dec 11, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can add new staff record so that I can keep new staff details in the database",https://www.pivotaltracker.com/story/show/134989815,,,,,,,,,,,,,,,,,"Plan the add staff layout form that consists of  text fields which are staff id, first name, last name, contact number, email, password and address",not completed,Write the code for the add staff layout form,not completed,Test the layout code to see whether the design elements are idented neatly,not completed,Connect to database,not completed,Write code for generating the staff id automatically and bind it to the staff id text field,not completed,Test the code to see whether it is displaying the correct id,not completed,"Write code to add the details of the staff into the ""Staff"" table",not completed,Test the code for add staff function,not completed,"Insert a JOptionPane message dialog with a confirmation message ""Confirm to add?"" to alert the user about the action that he or she is about to perform",not completed,"Insert a JOptionPane message dialog with a message ""Staff is successfully added"" when the staff details is successfully inserted into the database",not completed
+134989825,Update staff,staff,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can update staff record so that I can have latest staff details",https://www.pivotaltracker.com/story/show/134989825,,,
+134989841,View staff,staff,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can view staff record so that I know how to contact them through their personal details",https://www.pivotaltracker.com/story/show/134989841,,,
+134989863,Add new seat,seat,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can add new seat record so that I can make sure the database is updated with the latest number of tables",https://www.pivotaltracker.com/story/show/134989863,,,
+134989877,Update seat,seat,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can update the seat record so that I can set number of chairs for a table",https://www.pivotaltracker.com/story/show/134989877,,,
+134989909,View seat,seat,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant manager, I can view the seat record so that I can know the seat availability status",https://www.pivotaltracker.com/story/show/134989909,,,
+134989655,View payment,payment,3,"Dec 12, 2016","Dec 25, 2016",feature,1,unstarted,"Nov 26, 2016",,,AdelinaTang,"As a restaurant staff, I can view customer's payment record so that I can know customer's transaction",https://www.pivotaltracker.com/story/show/134989655,,,
