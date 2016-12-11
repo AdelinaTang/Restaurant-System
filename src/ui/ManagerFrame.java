@@ -17,7 +17,7 @@ public class ManagerFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         pack();
-
+        jlbName.setText(staff.getFirstName());
         jbtLogOut.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int logOut = JOptionPane.showConfirmDialog(null, "Confirm to log out?", "Log out", JOptionPane.YES_NO_OPTION);
@@ -362,19 +362,24 @@ public class ManagerFrame extends javax.swing.JFrame {
         foodPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Food", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
 
         food.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pusheen-food.jpg"))); // NOI18N
-
+        
+        jbtCreateFood.setBackground(new java.awt.Color(153, 255, 153));
         jbtCreateFood.setText("Create");
         jbtCreateFood.setActionCommand("jbtCreateFood");
-
+        
+        jbtReadFood.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadFood.setText("Read");
         jbtReadFood.setActionCommand("jbtReadFood");
-
+        
+        jbtUpdateFood.setBackground(new java.awt.Color(255, 204, 102));
         jbtUpdateFood.setText("Update");
         jbtUpdateFood.setActionCommand("jbtUpdateFood");
 
+        jbtSearchFood.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchFood.setText("Search");
         jbtSearchFood.setActionCommand("jbtSearchFood");
 
+        jbtDeleteFood.setBackground(new java.awt.Color(255, 153, 153));
         jbtDeleteFood.setText("Delete");
         jbtDeleteFood.setActionCommand("jbtDeleteFood");
 
@@ -430,15 +435,19 @@ public class ManagerFrame extends javax.swing.JFrame {
 
         orders.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/order-pusheen.jpg"))); // NOI18N
 
+        jbtCreateOrders.setBackground(new java.awt.Color(153, 255, 153));
         jbtCreateOrders.setText("Create");
         jbtCreateOrders.setActionCommand("jbtCreateOrders");
 
+        jbtReadOrders.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadOrders.setText("Read");
         jbtReadOrders.setActionCommand("jbtReadOrders");
-
+        
+        jbtUpdateOrders.setBackground(new java.awt.Color(255, 204, 102));
         jbtUpdateOrders.setText("Update");
         jbtUpdateOrders.setActionCommand("jbtUpdateOrders");
 
+        jbtSearchOrders.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchOrders.setText("Search");
         jbtSearchOrders.setActionCommand("jbtSearchStaff");
 
@@ -484,19 +493,24 @@ public class ManagerFrame extends javax.swing.JFrame {
         staffPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Staff", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
 
         staff.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cook-pusheen.jpg"))); // NOI18N
-
+        
+        jbtCreateStaff.setBackground(new java.awt.Color(153, 255, 153));
         jbtCreateStaff.setText("Create");
         jbtCreateStaff.setActionCommand("jbtCreateStaff");
 
+        jbtReadStaff.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadStaff.setText("Read");
         jbtReadStaff.setActionCommand("jbtReadStaff");
-
+        
+        jbtUpdateStaff.setBackground(new java.awt.Color(255, 204, 102));
         jbtUpdateStaff.setText("Update");
         jbtUpdateStaff.setActionCommand("jbtUpdateStaff");
 
+        jbtDeleteStaff.setBackground(new java.awt.Color(255, 153, 153));
         jbtDeleteStaff.setText("Delete");
         jbtDeleteStaff.setActionCommand("jbtDeleteStaff");
 
+        jbtSearchStaff.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchStaff.setText("Search");
         jbtSearchStaff.setActionCommand("jbtSearchStaff");
 
@@ -551,12 +565,15 @@ public class ManagerFrame extends javax.swing.JFrame {
         payments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pusheen-payment.jpg"))); // NOI18N
         payments.setText("jLabel3");
 
+        jbtCheckOut.setBackground(new java.awt.Color(153, 255, 153));
         jbtCheckOut.setText("CheckOut");
         jbtCheckOut.setActionCommand("jbtCheckOut");
 
+        jbtSearchPayment.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchPayment.setText("Search");
         jbtSearchPayment.setActionCommand("jbtSearchPayment");
 
+        jbtReadPayment.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadPayment.setText("Read");
         jbtReadPayment.setActionCommand("jbtReadOrders");
 
@@ -600,22 +617,28 @@ public class ManagerFrame extends javax.swing.JFrame {
         customerPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Member", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
 
         customer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/customer-pusheen.jpg"))); // NOI18N
-
+        
+        jbtCreateCustomer.setBackground(new java.awt.Color(153, 255, 153));
         jbtCreateCustomer.setText("Create");
         jbtCreateCustomer.setActionCommand("jbtCreateCustomer");
 
+        jbtReadCustomer.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadCustomer.setText("Read");
         jbtReadCustomer.setActionCommand("jbtReadCustomer");
-
+        
+        jbtUpdateCustomer.setBackground(new java.awt.Color(255, 204, 102));
         jbtUpdateCustomer.setText("Update");
         jbtUpdateCustomer.setActionCommand("jbtUpdateCustomer");
 
+        jbtDeleteCustomer.setBackground(new java.awt.Color(255, 153, 153));
         jbtDeleteCustomer.setText("Delete");
         jbtDeleteCustomer.setActionCommand("jbtDeleteCustomer");
 
+        jbtSearchCustomer.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchCustomer.setText("Search");
         jbtSearchCustomer.setActionCommand("jbtSearchCustomer");
 
+        jbtRenew.setBackground(new java.awt.Color(153, 255, 153));
         jbtRenew.setText("Renew");
         jbtRenew.setActionCommand("jbtRenew");
 
@@ -677,19 +700,24 @@ public class ManagerFrame extends javax.swing.JFrame {
         seatPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Seat", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Handwriting", 0, 18))); // NOI18N
 
         seats.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/seat-pusheen.jpg"))); // NOI18N
-
+        
+        jbtCreateSeat.setBackground(new java.awt.Color(153, 255, 153));
         jbtCreateSeat.setText("Create");
         jbtCreateSeat.setActionCommand("jbtCreateSeat");
 
+        jbtReadSeat.setBackground(new java.awt.Color(153, 255, 255));
         jbtReadSeat.setText("Read");
         jbtReadSeat.setActionCommand("jbtReadSeat");
-
+        
+        jbtUpdateSeat.setBackground(new java.awt.Color(255, 204, 102));
         jbtUpdateSeat.setText("Update");
         jbtUpdateSeat.setActionCommand("jbtUpdateSeat");
 
+        jbtDeleteSeat.setBackground(new java.awt.Color(255, 153, 153));
         jbtDeleteSeat.setText("Delete");
         jbtDeleteSeat.setActionCommand("jbtDeleteSeat");
 
+        jbtSearchSeat.setBackground(new java.awt.Color(153, 255, 255));
         jbtSearchSeat.setText("Search");
         jbtSearchSeat.setActionCommand("jbtSearchSeat");
 
@@ -854,6 +882,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private javax.swing.JButton jbtUpdateOrders;
     private javax.swing.JButton jbtUpdateSeat;
     private javax.swing.JButton jbtUpdateStaff;
+    private javax.swing.JLabel jlbName;
     private javax.swing.JLabel orders;
     private javax.swing.JPanel ordersPanel;
     private javax.swing.JLabel payments;
