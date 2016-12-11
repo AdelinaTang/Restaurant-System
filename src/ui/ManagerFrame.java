@@ -127,21 +127,21 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class CreateFoodListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-           
+           new CreateMenusFrame();
         }
     }
 
     private class ReadFoodListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new ReadMenusFrame();
         }
     }
 
     private class UpdateFoodListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new UpdateMenusFrame();
         }
     }
 
