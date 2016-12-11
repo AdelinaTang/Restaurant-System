@@ -200,7 +200,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class RenewListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new RenewCustomerFrame();
         }
     }
 
