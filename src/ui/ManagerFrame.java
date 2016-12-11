@@ -88,7 +88,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class CreateStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new CreateStaffFrame();
 
         }
     }
