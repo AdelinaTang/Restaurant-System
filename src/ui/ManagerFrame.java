@@ -294,7 +294,7 @@ public class ManagerFrame extends javax.swing.JFrame {
      private class SearchPaymentListener implements ActionListener{
         
          public void actionPerformed(ActionEvent e) {
-            
+             new SearchPaymentFrame();
         }
     }
     
