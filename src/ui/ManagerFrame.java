@@ -210,7 +210,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class CreateSeatListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+             new CreateSeatFrame();
         }
     }
 
@@ -225,7 +225,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class UpdateSeatListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new UpdateSeatFrame();
         }
     }
 
