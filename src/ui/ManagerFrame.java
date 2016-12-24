@@ -96,21 +96,21 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class ReadStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new ReadStaffFrame();
         }
     }
 
     private class UpdateStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+            new UpdateStaffFrame();
         }
     }
 
     private class DeleteStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+          
         }
     }
 
