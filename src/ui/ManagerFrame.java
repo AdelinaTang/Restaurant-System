@@ -232,7 +232,7 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class DeleteSeatListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+             new DeleteSeatFrame();
         }
     }
 
