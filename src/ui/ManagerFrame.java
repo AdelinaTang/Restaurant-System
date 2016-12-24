@@ -110,14 +110,14 @@ public class ManagerFrame extends javax.swing.JFrame {
     private class DeleteStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-          
+          new DeleteStaffFrame();
         }
     }
 
     private class SearchStaffListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            
+             new SearchStaffFrame();
         }
     }
 
